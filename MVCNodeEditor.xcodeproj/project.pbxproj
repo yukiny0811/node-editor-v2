@@ -7,19 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBDFAD95282D7F4E00DE915F /* PlusFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD94282D7F4E00DE915F /* PlusFloatNode.swift */; };
+		BBDFAD97282D7F8300DE915F /* PlusFloatNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD96282D7F8300DE915F /* PlusFloatNodeModel.swift */; };
+		BBDFAD99282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD98282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift */; };
 		BBFEF50C282D0A2800F22E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF50B282D0A2800F22E9E /* AppDelegate.swift */; };
 		BBFEF50E282D0A2800F22E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF50D282D0A2800F22E9E /* ViewController.swift */; };
 		BBFEF510282D0A2A00F22E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFEF50F282D0A2A00F22E9E /* Assets.xcassets */; };
 		BBFEF513282D0A2A00F22E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFEF511282D0A2A00F22E9E /* Main.storyboard */; };
+		BBFEF51B282D0A4300F22E9E /* NodeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF51A282D0A4300F22E9E /* NodeScene.swift */; };
+		BBFEF521282D0B7200F22E9E /* InputModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF520282D0B7200F22E9E /* InputModelBase.swift */; };
+		BBFEF523282D0B8800F22E9E /* OutputModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF522282D0B8800F22E9E /* OutputModelBase.swift */; };
+		BBFEF525282D0B9C00F22E9E /* NodeModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF524282D0B9C00F22E9E /* NodeModelBase.swift */; };
+		BBFEF528282D0BDF00F22E9E /* StaticFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF527282D0BDF00F22E9E /* StaticFloatNode.swift */; };
+		BBFEF52A282D0BEA00F22E9E /* StaticFloatNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF529282D0BEA00F22E9E /* StaticFloatNodeModel.swift */; };
+		BBFEF52D282D0C4F00F22E9E /* FloatOutputPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF52C282D0C4F00F22E9E /* FloatOutputPin.swift */; };
+		BBFEF52F282D0C5800F22E9E /* FloatOutputPinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF52E282D0C5800F22E9E /* FloatOutputPinModel.swift */; };
+		BBFEF532282D0CF700F22E9E /* FloatInputPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF531282D0CF700F22E9E /* FloatInputPin.swift */; };
+		BBFEF534282D0D0100F22E9E /* FloatInputPinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF533282D0D0100F22E9E /* FloatInputPinModel.swift */; };
+		BBFEF536282D297A00F22E9E /* NodeScene+StaticFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF535282D297A00F22E9E /* NodeScene+StaticFloatNode.swift */; };
+		BBFEF539282D2CFE00F22E9E /* ShowFloatNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF538282D2CFE00F22E9E /* ShowFloatNodeModel.swift */; };
+		BBFEF53B282D2D3800F22E9E /* ShowFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF53A282D2D3800F22E9E /* ShowFloatNode.swift */; };
+		BBFEF53D282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF53C282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBDFAD94282D7F4E00DE915F /* PlusFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusFloatNode.swift; sourceTree = "<group>"; };
+		BBDFAD96282D7F8300DE915F /* PlusFloatNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusFloatNodeModel.swift; sourceTree = "<group>"; };
+		BBDFAD98282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+PlusFloatNode.swift"; sourceTree = "<group>"; };
 		BBFEF508282D0A2800F22E9E /* MVCNodeEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCNodeEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFEF50B282D0A2800F22E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBFEF50D282D0A2800F22E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BBFEF50F282D0A2A00F22E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBFEF512282D0A2A00F22E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBFEF514282D0A2A00F22E9E /* MVCNodeEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MVCNodeEditor.entitlements; sourceTree = "<group>"; };
+		BBFEF51A282D0A4300F22E9E /* NodeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeScene.swift; sourceTree = "<group>"; };
+		BBFEF520282D0B7200F22E9E /* InputModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModelBase.swift; sourceTree = "<group>"; };
+		BBFEF522282D0B8800F22E9E /* OutputModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputModelBase.swift; sourceTree = "<group>"; };
+		BBFEF524282D0B9C00F22E9E /* NodeModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModelBase.swift; sourceTree = "<group>"; };
+		BBFEF527282D0BDF00F22E9E /* StaticFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFloatNode.swift; sourceTree = "<group>"; };
+		BBFEF529282D0BEA00F22E9E /* StaticFloatNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFloatNodeModel.swift; sourceTree = "<group>"; };
+		BBFEF52C282D0C4F00F22E9E /* FloatOutputPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatOutputPin.swift; sourceTree = "<group>"; };
+		BBFEF52E282D0C5800F22E9E /* FloatOutputPinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatOutputPinModel.swift; sourceTree = "<group>"; };
+		BBFEF531282D0CF700F22E9E /* FloatInputPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatInputPin.swift; sourceTree = "<group>"; };
+		BBFEF533282D0D0100F22E9E /* FloatInputPinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatInputPinModel.swift; sourceTree = "<group>"; };
+		BBFEF535282D297A00F22E9E /* NodeScene+StaticFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+StaticFloatNode.swift"; sourceTree = "<group>"; };
+		BBFEF538282D2CFE00F22E9E /* ShowFloatNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFloatNodeModel.swift; sourceTree = "<group>"; };
+		BBFEF53A282D2D3800F22E9E /* ShowFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFloatNode.swift; sourceTree = "<group>"; };
+		BBFEF53C282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+ShowFloatNode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +67,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBDFAD93282D7F3800DE915F /* PlusFloatNode */ = {
+			isa = PBXGroup;
+			children = (
+				BBDFAD94282D7F4E00DE915F /* PlusFloatNode.swift */,
+				BBDFAD96282D7F8300DE915F /* PlusFloatNodeModel.swift */,
+				BBDFAD98282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift */,
+			);
+			path = PlusFloatNode;
+			sourceTree = "<group>";
+		};
 		BBFEF4FF282D0A2800F22E9E = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +98,82 @@
 			children = (
 				BBFEF50B282D0A2800F22E9E /* AppDelegate.swift */,
 				BBFEF50D282D0A2800F22E9E /* ViewController.swift */,
+				BBFEF51A282D0A4300F22E9E /* NodeScene.swift */,
+				BBFEF51F282D0B5900F22E9E /* InputPins */,
+				BBFEF51D282D0B4C00F22E9E /* OutputPins */,
+				BBFEF51C282D0B4500F22E9E /* Nodes */,
 				BBFEF50F282D0A2A00F22E9E /* Assets.xcassets */,
 				BBFEF511282D0A2A00F22E9E /* Main.storyboard */,
 				BBFEF514282D0A2A00F22E9E /* MVCNodeEditor.entitlements */,
 			);
 			path = MVCNodeEditor;
+			sourceTree = "<group>";
+		};
+		BBFEF51C282D0B4500F22E9E /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				BBDFAD93282D7F3800DE915F /* PlusFloatNode */,
+				BBFEF537282D2CEB00F22E9E /* ShowFloatNode */,
+				BBFEF526282D0BD200F22E9E /* StaticFloatNode */,
+				BBFEF524282D0B9C00F22E9E /* NodeModelBase.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		BBFEF51D282D0B4C00F22E9E /* OutputPins */ = {
+			isa = PBXGroup;
+			children = (
+				BBFEF52B282D0C4100F22E9E /* FloatOutputPin */,
+				BBFEF522282D0B8800F22E9E /* OutputModelBase.swift */,
+			);
+			path = OutputPins;
+			sourceTree = "<group>";
+		};
+		BBFEF51F282D0B5900F22E9E /* InputPins */ = {
+			isa = PBXGroup;
+			children = (
+				BBFEF530282D0CED00F22E9E /* FloatInputPin */,
+				BBFEF520282D0B7200F22E9E /* InputModelBase.swift */,
+			);
+			path = InputPins;
+			sourceTree = "<group>";
+		};
+		BBFEF526282D0BD200F22E9E /* StaticFloatNode */ = {
+			isa = PBXGroup;
+			children = (
+				BBFEF527282D0BDF00F22E9E /* StaticFloatNode.swift */,
+				BBFEF529282D0BEA00F22E9E /* StaticFloatNodeModel.swift */,
+				BBFEF535282D297A00F22E9E /* NodeScene+StaticFloatNode.swift */,
+			);
+			path = StaticFloatNode;
+			sourceTree = "<group>";
+		};
+		BBFEF52B282D0C4100F22E9E /* FloatOutputPin */ = {
+			isa = PBXGroup;
+			children = (
+				BBFEF52C282D0C4F00F22E9E /* FloatOutputPin.swift */,
+				BBFEF52E282D0C5800F22E9E /* FloatOutputPinModel.swift */,
+			);
+			path = FloatOutputPin;
+			sourceTree = "<group>";
+		};
+		BBFEF530282D0CED00F22E9E /* FloatInputPin */ = {
+			isa = PBXGroup;
+			children = (
+				BBFEF531282D0CF700F22E9E /* FloatInputPin.swift */,
+				BBFEF533282D0D0100F22E9E /* FloatInputPinModel.swift */,
+			);
+			path = FloatInputPin;
+			sourceTree = "<group>";
+		};
+		BBFEF537282D2CEB00F22E9E /* ShowFloatNode */ = {
+			isa = PBXGroup;
+			children = (
+				BBFEF538282D2CFE00F22E9E /* ShowFloatNodeModel.swift */,
+				BBFEF53A282D2D3800F22E9E /* ShowFloatNode.swift */,
+				BBFEF53C282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift */,
+			);
+			path = ShowFloatNode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +246,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFEF51B282D0A4300F22E9E /* NodeScene.swift in Sources */,
+				BBFEF536282D297A00F22E9E /* NodeScene+StaticFloatNode.swift in Sources */,
+				BBDFAD97282D7F8300DE915F /* PlusFloatNodeModel.swift in Sources */,
+				BBFEF52F282D0C5800F22E9E /* FloatOutputPinModel.swift in Sources */,
+				BBFEF523282D0B8800F22E9E /* OutputModelBase.swift in Sources */,
+				BBFEF53D282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift in Sources */,
+				BBFEF532282D0CF700F22E9E /* FloatInputPin.swift in Sources */,
+				BBFEF52A282D0BEA00F22E9E /* StaticFloatNodeModel.swift in Sources */,
+				BBFEF534282D0D0100F22E9E /* FloatInputPinModel.swift in Sources */,
+				BBFEF52D282D0C4F00F22E9E /* FloatOutputPin.swift in Sources */,
+				BBFEF528282D0BDF00F22E9E /* StaticFloatNode.swift in Sources */,
+				BBFEF539282D2CFE00F22E9E /* ShowFloatNodeModel.swift in Sources */,
+				BBDFAD95282D7F4E00DE915F /* PlusFloatNode.swift in Sources */,
+				BBDFAD99282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift in Sources */,
+				BBFEF525282D0B9C00F22E9E /* NodeModelBase.swift in Sources */,
 				BBFEF50E282D0A2800F22E9E /* ViewController.swift in Sources */,
 				BBFEF50C282D0A2800F22E9E /* AppDelegate.swift in Sources */,
+				BBFEF53B282D2D3800F22E9E /* ShowFloatNode.swift in Sources */,
+				BBFEF521282D0B7200F22E9E /* InputModelBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
