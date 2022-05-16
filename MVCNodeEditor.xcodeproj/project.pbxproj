@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBD2AF77283213A400965DF7 /* ShaderCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF76283213A400965DF7 /* ShaderCore.swift */; };
+		BBD2AF7A2832144000965DF7 /* ShowTextureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF792832144000965DF7 /* ShowTextureNode.swift */; };
+		BBD2AF80283215F300965DF7 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF7F283215F300965DF7 /* Renderer.swift */; };
+		BBD2AF832832165900965DF7 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF822832165900965DF7 /* Shader.metal */; };
+		BBD2AF852832170000965DF7 /* NodeScene+AddShowTextureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF842832170000965DF7 /* NodeScene+AddShowTextureNode.swift */; };
 		BBDFAD95282D7F4E00DE915F /* PlusFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD94282D7F4E00DE915F /* PlusFloatNode.swift */; };
 		BBDFAD97282D7F8300DE915F /* PlusFloatNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD96282D7F8300DE915F /* PlusFloatNodeModel.swift */; };
 		BBDFAD99282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD98282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift */; };
@@ -31,6 +36,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBD2AF76283213A400965DF7 /* ShaderCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCore.swift; sourceTree = "<group>"; };
+		BBD2AF792832144000965DF7 /* ShowTextureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTextureNode.swift; sourceTree = "<group>"; };
+		BBD2AF7F283215F300965DF7 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		BBD2AF822832165900965DF7 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		BBD2AF842832170000965DF7 /* NodeScene+AddShowTextureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+AddShowTextureNode.swift"; sourceTree = "<group>"; };
 		BBDFAD94282D7F4E00DE915F /* PlusFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusFloatNode.swift; sourceTree = "<group>"; };
 		BBDFAD96282D7F8300DE915F /* PlusFloatNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusFloatNodeModel.swift; sourceTree = "<group>"; };
 		BBDFAD98282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+PlusFloatNode.swift"; sourceTree = "<group>"; };
@@ -67,6 +77,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBD2AF752832138A00965DF7 /* ShaderCores */ = {
+			isa = PBXGroup;
+			children = (
+				BBD2AF812832164400965DF7 /* Shaders */,
+				BBD2AF76283213A400965DF7 /* ShaderCore.swift */,
+				BBD2AF7F283215F300965DF7 /* Renderer.swift */,
+			);
+			path = ShaderCores;
+			sourceTree = "<group>";
+		};
+		BBD2AF782832142B00965DF7 /* ShowTextureNode */ = {
+			isa = PBXGroup;
+			children = (
+				BBD2AF792832144000965DF7 /* ShowTextureNode.swift */,
+				BBD2AF842832170000965DF7 /* NodeScene+AddShowTextureNode.swift */,
+			);
+			path = ShowTextureNode;
+			sourceTree = "<group>";
+		};
+		BBD2AF812832164400965DF7 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				BBD2AF822832165900965DF7 /* Shader.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
 		BBDFAD93282D7F3800DE915F /* PlusFloatNode */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +139,7 @@
 				BBFEF51F282D0B5900F22E9E /* InputPins */,
 				BBFEF51D282D0B4C00F22E9E /* OutputPins */,
 				BBFEF51C282D0B4500F22E9E /* Nodes */,
+				BBD2AF752832138A00965DF7 /* ShaderCores */,
 				BBFEF50F282D0A2A00F22E9E /* Assets.xcassets */,
 				BBFEF511282D0A2A00F22E9E /* Main.storyboard */,
 				BBFEF514282D0A2A00F22E9E /* MVCNodeEditor.entitlements */,
@@ -112,8 +150,9 @@
 		BBFEF51C282D0B4500F22E9E /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				BBDFAD93282D7F3800DE915F /* PlusFloatNode */,
+				BBD2AF782832142B00965DF7 /* ShowTextureNode */,
 				BBFEF537282D2CEB00F22E9E /* ShowFloatNode */,
+				BBDFAD93282D7F3800DE915F /* PlusFloatNode */,
 				BBFEF526282D0BD200F22E9E /* StaticFloatNode */,
 				BBFEF524282D0B9C00F22E9E /* NodeModelBase.swift */,
 			);
@@ -247,14 +286,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFEF51B282D0A4300F22E9E /* NodeScene.swift in Sources */,
+				BBD2AF852832170000965DF7 /* NodeScene+AddShowTextureNode.swift in Sources */,
 				BBFEF536282D297A00F22E9E /* NodeScene+StaticFloatNode.swift in Sources */,
 				BBDFAD97282D7F8300DE915F /* PlusFloatNodeModel.swift in Sources */,
+				BBD2AF77283213A400965DF7 /* ShaderCore.swift in Sources */,
 				BBFEF52F282D0C5800F22E9E /* FloatOutputPinModel.swift in Sources */,
+				BBD2AF80283215F300965DF7 /* Renderer.swift in Sources */,
 				BBFEF523282D0B8800F22E9E /* OutputModelBase.swift in Sources */,
 				BBFEF53D282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift in Sources */,
 				BBFEF532282D0CF700F22E9E /* FloatInputPin.swift in Sources */,
 				BBFEF52A282D0BEA00F22E9E /* StaticFloatNodeModel.swift in Sources */,
 				BBFEF534282D0D0100F22E9E /* FloatInputPinModel.swift in Sources */,
+				BBD2AF7A2832144000965DF7 /* ShowTextureNode.swift in Sources */,
+				BBD2AF832832165900965DF7 /* Shader.metal in Sources */,
 				BBFEF52D282D0C4F00F22E9E /* FloatOutputPin.swift in Sources */,
 				BBFEF528282D0BDF00F22E9E /* StaticFloatNode.swift in Sources */,
 				BBFEF539282D2CFE00F22E9E /* ShowFloatNodeModel.swift in Sources */,
