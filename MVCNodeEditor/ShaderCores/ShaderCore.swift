@@ -22,4 +22,8 @@ class ShaderCore {
     private init() {
         device = MTLCreateSystemDefaultDevice()
     }
+    
+    public func setNewLibrary(source: String) {
+        self.library = try! self.device.makeLibrary(source: source, options: nil)
+    }
 }
