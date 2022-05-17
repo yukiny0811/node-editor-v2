@@ -1,19 +1,19 @@
 //
-//  ShowFloatNodeModel.swift
+//  ShowTextureNodeModel.swift
 //  MVCNodeEditor
 //
-//  Created by クワシマ・ユウキ on 2022/05/12.
+//  Created by クワシマ・ユウキ on 2022/05/17.
 //
 
 import Foundation
 import Combine
 import Cocoa
 
-class ShowFloatNodeModel : NodeModelBase {
+class ShowTextureNodeModel : NodeModelBase {
     let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
     @Published var inputId: String? = nil
-    @Published var value: Float = 0.0
+    @Published var value: String = ""
     init() {
     }
 }

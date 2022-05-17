@@ -1,20 +1,19 @@
 //
-//  FloatOutputPinModel.swift
+//  StringOutputPinModel.swift
 //  MVCNodeEditor
 //
-//  Created by クワシマ・ユウキ on 2022/05/12.
+//  Created by クワシマ・ユウキ on 2022/05/17.
 //
 
 import Foundation
 import Cocoa
 import Combine
 
-class FloatOutputPinModel: OutputModelBase {
+class StringOutputPinModel: OutputModelBase {
     let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
-    @Published var value: Float = 0.0
+    @Published var value: String = ""
     override init() {
         
     }
 }
-

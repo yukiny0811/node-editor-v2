@@ -11,20 +11,20 @@ import Combine
 
 class NodeScene: NSView {
     
-    var nodeModels: [UUID: NodeModelBase] = [:]
-    var nodeViews: [UUID: NSView] = [:]
+    var nodeModels: [String: NodeModelBase] = [:]
+    var nodeViews: [String: NSView] = [:]
     
-    var inputPinModels: [UUID: InputModelBase] = [:]
-    var inputPinViews: [UUID: NSView] = [:]
+    var inputPinModels: [String: InputModelBase] = [:]
+    var inputPinViews: [String: NSView] = [:]
     
-    var outputPinModels: [UUID: OutputModelBase] = [:]
-    var outputPinViews: [UUID: NSView] = [:]
+    var outputPinModels: [String: OutputModelBase] = [:]
+    var outputPinViews: [String: NSView] = [:]
     
-    var hoveringPinId: UUID? = nil
-    var selectedPinId: UUID? = nil
-    var targetPinId: UUID? = nil
+    var hoveringPinId: String? = nil
+    var selectedPinId: String? = nil
+    var targetPinId: String? = nil
     
-    var connections: [(output: UUID, input: UUID)] = []
+    var connections: [(output: String, input: String)] = []
     
     var mousePoint: NSPoint? = nil
     
@@ -99,6 +99,7 @@ class NodeScene: NSView {
         super.mouseDragged(with: event)
         self.needsDisplay = true
         mousePoint = event.locationInWindow
+        print("mouseDragged", selectedPinId)
         if selectedPinId == nil {return}
         
     }
@@ -106,17 +107,19 @@ class NodeScene: NSView {
     override func mouseDown(with event: NSEvent) {
         super.mouseDown(with: event)
         self.needsDisplay = true
-        print(self.hoveringPinId)
         mousePoint = event.locationInWindow
         self.selectedPinId = self.hoveringPinId
+        print("mouseDown ", self.selectedPinId)
     }
     
     override func mouseUp(with event: NSEvent) {
         super.mouseUp(with: event)
         self.needsDisplay = true
         if self.selectedPinId != nil {
+            print("pin id not nil")
             if self.hoveringPinId != nil {
                 self.targetPinId = self.hoveringPinId
+                print("target pin id", self.targetPinId)
                 ///TODO
                 guard outputPinModels[self.selectedPinId!] != nil else {
                     return
@@ -124,7 +127,10 @@ class NodeScene: NSView {
                 guard inputPinModels[self.targetPinId!] != nil else {
                     return
                 }
-                outputPinModels[self.selectedPinId!]!.inputId = self.targetPinId
+                print("going well...!")
+                print("mouseup1::::", outputPinModels[self.selectedPinId!]?.inputId)
+                outputPinModels[selectedPinId!]?.inputId = targetPinId
+                print("mouseup2::::", outputPinModels[self.selectedPinId!]?.inputId)
                 connections.append((output: self.selectedPinId!, input: self.targetPinId!))
                 selectedPinId = nil
                 targetPinId = nil

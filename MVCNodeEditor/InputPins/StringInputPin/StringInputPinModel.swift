@@ -1,8 +1,8 @@
 //
-//  FloatInputPinModel.swift
+//  StringInputPinModel.swift
 //  MVCNodeEditor
 //
-//  Created by クワシマ・ユウキ on 2022/05/12.
+//  Created by クワシマ・ユウキ on 2022/05/17.
 //
 
 import Foundation
@@ -10,10 +10,10 @@ import Cocoa
 import Combine
 
 
-class FloatInputPinModel: InputModelBase {
+class StringInputPinModel: InputModelBase {
     let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
-    @Published var value: Float = 0.0
+    @Published var value: String = ""
     var outputId: String? = nil
     init() {
         

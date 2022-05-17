@@ -72,7 +72,7 @@ extension Renderer: MTKViewDelegate {
         commandBuffer?.commit()
         
         let elapsedTime = Date().timeIntervalSince(startTime)
-        print("elapsed: \(elapsedTime)")
+//        print("elapsed: \(elapsedTime)")
         
         saveTime = Date()
     }

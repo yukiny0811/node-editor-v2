@@ -10,10 +10,10 @@ import Cocoa
 import Combine
 
 class PlusFloatNodeModel: NodeModelBase {
-    let uuid: UUID = UUID()
+    let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
-    @Published var outputId: UUID? = nil
-    @Published var inputId: UUID? = nil
+    @Published var outputId: String? = nil
+    @Published var inputId: String? = nil
     @Published var value: Float = 0.0
     init() {
         

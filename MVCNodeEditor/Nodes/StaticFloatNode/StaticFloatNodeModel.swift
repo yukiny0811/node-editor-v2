@@ -10,9 +10,9 @@ import Cocoa
 import Combine
 
 class StaticFloatNodeModel: NodeModelBase {
-    let uuid: UUID = UUID()
+    let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
-    var outputId: UUID? = nil
+    var outputId: String? = nil
     @Published var value: Float = 0.0
     init() {
         
