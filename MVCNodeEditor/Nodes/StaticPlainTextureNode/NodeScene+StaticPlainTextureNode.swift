@@ -11,7 +11,7 @@ import Combine
 
 extension NodeScene {
     func addStaticPlainTextureNode(frame: NSRect) {
-        
+    
         let nodeModel = StaticPlainTextureNodeModel()
         nodeModels[nodeModel.uuid] = nodeModel
         let nodeView = StaticPlainTextureNode(frame: frame)
@@ -26,52 +26,42 @@ extension NodeScene {
         self.addSubview(nodeView)
         
         nodeModel.value.sink { value in
+            print("nodeModelValue:::", value)
             outputModel.value = value
         }.store(in: &nodeModel.subscriptions)
         
         outputModel.$value.sink { [self] value in
+            print("outpu value: ", value)
             if outputModel.inputId != nil {
+                print("yobareteru?")
                 (inputPinModels[outputModel.inputId!] as? StringInputPinModel)?.value = value
-                
             }
+        }.store(in: &outputModel.subscriptions)
+
+        outputModel.$inputId.sink { [self] value in
+
+            print("inputid::: ", value)
+            print("outputModel:::", outputModel.value)
+            print("outputinput::", outputModel.inputId)
+            nodeModel.value.send("float4 color = float4(0.0, 1.0, 0.0, 1.0);")
+
+            if value != nil {
+                (inputPinModels[value!] as? StringInputPinModel)?.value = outputModel.value
+            }
+
         }.store(in: &outputModel.subscriptions)
         
-        outputModel.$inputId.sink { [self] value in
-            if outputModel.inputId != nil {
-                (inputPinModels[outputModel.inputId!] as? StringInputPinModel)?.value = outputModel.value
-                nodeModel.value.send("float4 color = float4(0.0, 0.0, 0.0, 1.0);")
-            }
-        }.store(in: &outputModel.subscriptions)
         
         outputView.$isHovering.sink { value in
+            print("outputView hovering")
             if value == true {
+                print("outputView hovering true")
                 self.hoveringPinId = outputModel.uuid
             } else {
+                print("outputView hovering false")
                 self.hoveringPinId = nil
             }
         }.store(in: &outputView.subscriptions)
-        
-        
-//        outputModel.$value.sink { [self] value in
-//            if outputModel.inputId != nil {
-//                (inputPinModels[outputModel.inputId!] as? StringInputPinModel)?.value = value
-//            }
-//        }.store(in: &outputModel.subscriptions)
-//
-//        outputModel.$inputId.sink { [self] value in
-//            if outputModel.inputId != nil {
-//                (inputPinModels[outputModel.inputId!] as? FloatInputPinModel)?.value = outputModel.value
-//            }
-//        }.store(in: &outputModel.subscriptions)
-//
-//        outputView.$isHovering.sink { value in
-//            if value == true {
-//                self.hoveringPinId = outputModel.uuid
-//            } else {
-//                self.hoveringPinId = nil
-//            }
-//        }.store(in: &outputView.subscriptions)
-        
         
     }
 }

@@ -11,10 +11,10 @@ import Combine
 
 
 class FloatInputPinModel: InputModelBase {
-    let uuid: UUID = UUID()
+    let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
     @Published var value: Float = 0.0
-    var outputId: UUID? = nil
+    var outputId: String? = nil
     init() {
         
     }

@@ -8,5 +8,5 @@
 import Foundation
 
 class OutputModelBase {
-    @Published var inputId: UUID? = nil
+    @Published var inputId: String? = nil
 }

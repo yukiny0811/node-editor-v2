@@ -10,7 +10,7 @@ import Cocoa
 import Combine
 
 class FloatOutputPinModel: OutputModelBase {
-    let uuid: UUID = UUID()
+    let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
     @Published var value: Float = 0.0
     override init() {

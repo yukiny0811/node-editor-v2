@@ -11,10 +11,10 @@ import Combine
 
 
 class StringInputPinModel: InputModelBase {
-    let uuid: UUID = UUID()
+    let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
     @Published var value: String = ""
-    var outputId: UUID? = nil
+    var outputId: String? = nil
     init() {
         
     }

@@ -10,11 +10,10 @@ import Cocoa
 import Combine
 
 class StaticPlainTextureNodeModel: NodeModelBase {
-    let uuid: UUID = UUID()
+    let uuid: String = UUID().uuidString
     var subscriptions = Set<AnyCancellable>()
-    @Published var outputId: UUID? = nil
-    var value = PassthroughSubject<String, Never>()
+    @Published var outputId: String? = nil
+    var value = CurrentValueSubject<String, Never>("float4 color = float4(0.0, 1.0, 0.0, 1.0);")
     init() {
-        value.send("float4 color = float4(0.0, 0.0, 0.0, 1.0);")
     }
 }

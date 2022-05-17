@@ -24,11 +24,12 @@ class ShaderCore {
     }
     
     public func setNewLibrary(source: String) {
-        self.library = try! self.device.makeLibrary(source: source, options: nil)
-//        do {
-//            self.library = try self.device.makeLibrary(source: source, options: nil)
-//        } catch {
-//            print("library error")
-//        }
+//        self.library = try! self.device.makeLibrary(source: source, options: nil)
+        print("library set ??")
+        do {
+            self.library = try self.device.makeLibrary(source: source, options: nil)
+        } catch {
+            print("library error")
+        }
     }
 }
