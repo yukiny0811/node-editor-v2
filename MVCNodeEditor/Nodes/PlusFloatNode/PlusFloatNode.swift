@@ -9,9 +9,8 @@ import Foundation
 import Combine
 import Cocoa
 
-class PlusFloatNode: NSView {
+class PlusFloatNode: Node {
     let textField: NSTextField
-    var subscriptions = Set<AnyCancellable>()
     override init(frame: NSRect) {
         textField = NSTextField()
         super.init(frame: frame)

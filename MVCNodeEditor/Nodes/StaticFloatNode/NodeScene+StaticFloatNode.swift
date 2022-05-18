@@ -12,14 +12,14 @@ import Combine
 extension NodeScene {
     func addStaticFloatNode(frame: NSRect) {
         
-        let nodeModel = StaticFloatNodeModel()
+        let nodeModel = NodeModel<Float>()
         nodeModels[nodeModel.uuid] = nodeModel
         let nodeView = StaticFloatNode(frame: frame)
         nodeViews[nodeModel.uuid] = nodeView
         
-        let outputModel = FloatOutputPinModel()
+        let outputModel = OutputModel<Float>()
         outputPinModels[outputModel.uuid] = outputModel
-        let outputView = FloatOutputPin(frame: NSRect(x: frame.width - 30, y: 30, width: 30, height: 30))
+        let outputView = OutputPin(frame: NSRect(x: frame.width - 30, y: 30, width: 30, height: 30))
         outputPinViews[outputModel.uuid] = outputView
         
         nodeView.addSubview(outputView)
@@ -41,13 +41,13 @@ extension NodeScene {
         
         outputModel.$value.sink { [self] value in
             if outputModel.inputId != nil {
-                (inputPinModels[outputModel.inputId!] as? FloatInputPinModel)?.value = value
+                (inputPinModels[outputModel.inputId!] as? InputModel<Float>)?.value = value
             }
         }.store(in: &outputModel.subscriptions)
         
         outputModel.$inputId.sink { [self] value in
             if outputModel.inputId != nil {
-                (inputPinModels[outputModel.inputId!] as? FloatInputPinModel)?.value = outputModel.value
+                (inputPinModels[outputModel.inputId!] as? InputModel<Float>)?.value = outputModel.value
             }
         }.store(in: &outputModel.subscriptions)
         

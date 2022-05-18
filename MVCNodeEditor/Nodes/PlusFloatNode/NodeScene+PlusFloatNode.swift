@@ -12,28 +12,33 @@ import Combine
 extension NodeScene {
     func addPlusFloatNode(frame: NSRect) {
         
-        let nodeModel = PlusFloatNodeModel()
+        let nodeModel = NodeModel<Float>()
         nodeModels[nodeModel.uuid] = nodeModel
         let nodeView = PlusFloatNode(frame: frame)
         nodeViews[nodeModel.uuid] = nodeView
         
-        let inputModel = FloatInputPinModel()
+        let inputModel = InputModel<Float>()
         inputPinModels[inputModel.uuid] = inputModel
-        let inputView = FloatInputPin(frame: NSRect(x: 0, y: 30, width: 30, height: 30))
+        let inputView = InputPin(frame: NSRect(x: 0, y: 30, width: 30, height: 30))
         inputPinViews[inputModel.uuid] = inputView
         
-        let outputModel = FloatOutputPinModel()
+        let outputModel = OutputModel<Float>()
         outputPinModels[outputModel.uuid] = outputModel
-        let outputView = FloatOutputPin(frame: NSRect(x: frame.width - 30, y: 30, width: 30, height: 30))
+        let outputView = OutputPin(frame: NSRect(x: frame.width - 30, y: 30, width: 30, height: 30))
         outputPinViews[outputModel.uuid] = outputView
         
         nodeView.addSubview(inputView)
         nodeView.addSubview(outputView)
         self.addSubview(nodeView)
         
-        
         inputModel.$value.sink {value in
-            outputModel.value = nodeModel.value + value
+            guard let value = value else {
+                return
+            }
+            if nodeModel.value == nil {
+                return
+            }
+            outputModel.value = nodeModel.value! + value
         }.store(in: &inputModel.subscriptions)
         
         NotificationCenter.default
@@ -47,18 +52,24 @@ extension NodeScene {
             }.store(in: &nodeView.subscriptions)
         
         nodeModel.$value.sink {value in
-            outputModel.value = inputModel.value + value
+            if inputModel.value == nil {
+                return
+            }
+            guard let value = value else {
+                return
+            }
+            outputModel.value = inputModel.value! + value
         }.store(in: &nodeModel.subscriptions)
         
         outputModel.$value.sink { [self] value in
             if outputModel.inputId != nil {
-                (inputPinModels[outputModel.inputId!] as? FloatInputPinModel)?.value = value
+                (inputPinModels[outputModel.inputId!] as? InputModel<Float>)?.value = value
             }
         }.store(in: &outputModel.subscriptions)
         
         outputModel.$inputId.sink { [self] value in
             if outputModel.inputId != nil {
-                (inputPinModels[outputModel.inputId!] as? FloatInputPinModel)?.value = outputModel.value
+                (inputPinModels[outputModel.inputId!] as? InputModel<Float>)?.value = outputModel.value
             }
         }.store(in: &outputModel.subscriptions)
         

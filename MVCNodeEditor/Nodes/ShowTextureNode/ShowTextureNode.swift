@@ -11,11 +11,10 @@ import Cocoa
 import MetalKit
 import simd
 
-class ShowTextureNode: NSView {
+class ShowTextureNode: Node {
     
     var renderer: Renderer?
     var metalView: MTKView!
-    var subscriptions = Set<AnyCancellable>()
     override init(frame: NSRect) {
         super.init(frame: frame)
         

@@ -6,5 +6,9 @@
 //
 
 import Foundation
+import Combine
 
-protocol NodeModelBase {}
+class NodeModelBase {
+    let uuid: String = UUID().uuidString
+    var subscriptions = Set<AnyCancellable>()
+}

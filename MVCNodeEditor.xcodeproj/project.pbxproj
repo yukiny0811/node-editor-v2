@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB48C92928333DF2009A9FBF /* ShowTextureNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48C92828333DF2009A9FBF /* ShowTextureNodeModel.swift */; };
-		BB48C92C28333EFF009A9FBF /* StringInputPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48C92B28333EFF009A9FBF /* StringInputPin.swift */; };
-		BB48C92E28333F2C009A9FBF /* StringInputPinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48C92D28333F2C009A9FBF /* StringInputPinModel.swift */; };
-		BB48C93128333F8A009A9FBF /* StringOutputPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48C93028333F8A009A9FBF /* StringOutputPin.swift */; };
-		BB48C93328333FAB009A9FBF /* StringOutputPinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48C93228333FAB009A9FBF /* StringOutputPinModel.swift */; };
 		BB48C935283345EB009A9FBF /* NodeScene+StaticPlainTextureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48C934283345EB009A9FBF /* NodeScene+StaticPlainTextureNode.swift */; };
 		BBD2AF77283213A400965DF7 /* ShaderCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF76283213A400965DF7 /* ShaderCore.swift */; };
 		BBD2AF7A2832144000965DF7 /* ShowTextureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF792832144000965DF7 /* ShowTextureNode.swift */; };
@@ -19,36 +14,31 @@
 		BBD2AF832832165900965DF7 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF822832165900965DF7 /* Shader.metal */; };
 		BBD2AF852832170000965DF7 /* NodeScene+AddShowTextureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF842832170000965DF7 /* NodeScene+AddShowTextureNode.swift */; };
 		BBD2AF8828321B7B00965DF7 /* StaticPlainTextureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF8728321B7B00965DF7 /* StaticPlainTextureNode.swift */; };
-		BBD2AF8A28321BB100965DF7 /* StaticPlainTextureNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2AF8928321BB100965DF7 /* StaticPlainTextureNodeModel.swift */; };
 		BBDFAD95282D7F4E00DE915F /* PlusFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD94282D7F4E00DE915F /* PlusFloatNode.swift */; };
-		BBDFAD97282D7F8300DE915F /* PlusFloatNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD96282D7F8300DE915F /* PlusFloatNodeModel.swift */; };
 		BBDFAD99282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFAD98282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift */; };
+		BBF424CB2834B08100B3047F /* OutputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424CA2834B08100B3047F /* OutputModel.swift */; };
+		BBF424CD2834B0CC00B3047F /* OutputPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424CC2834B0CC00B3047F /* OutputPin.swift */; };
+		BBF424CF2834B11600B3047F /* InputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424CE2834B11600B3047F /* InputModel.swift */; };
+		BBF424D12834B13600B3047F /* InputPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424D02834B13600B3047F /* InputPin.swift */; };
+		BBF424D52834B1AF00B3047F /* NodeScene+draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424D42834B1AF00B3047F /* NodeScene+draw.swift */; };
+		BBF424D72834B20300B3047F /* NodeScene+mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424D62834B20300B3047F /* NodeScene+mouse.swift */; };
+		BBF424D92834B5F400B3047F /* OutputModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424D82834B5F400B3047F /* OutputModelBase.swift */; };
+		BBF424DB2834B62100B3047F /* InputModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424DA2834B62100B3047F /* InputModelBase.swift */; };
+		BBF424DD2834B87C00B3047F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424DC2834B87C00B3047F /* Node.swift */; };
+		BBF424DF2834B93A00B3047F /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424DE2834B93A00B3047F /* NodeModel.swift */; };
 		BBFEF50C282D0A2800F22E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF50B282D0A2800F22E9E /* AppDelegate.swift */; };
 		BBFEF50E282D0A2800F22E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF50D282D0A2800F22E9E /* ViewController.swift */; };
 		BBFEF510282D0A2A00F22E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFEF50F282D0A2A00F22E9E /* Assets.xcassets */; };
 		BBFEF513282D0A2A00F22E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFEF511282D0A2A00F22E9E /* Main.storyboard */; };
 		BBFEF51B282D0A4300F22E9E /* NodeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF51A282D0A4300F22E9E /* NodeScene.swift */; };
-		BBFEF521282D0B7200F22E9E /* InputModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF520282D0B7200F22E9E /* InputModelBase.swift */; };
-		BBFEF523282D0B8800F22E9E /* OutputModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF522282D0B8800F22E9E /* OutputModelBase.swift */; };
 		BBFEF525282D0B9C00F22E9E /* NodeModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF524282D0B9C00F22E9E /* NodeModelBase.swift */; };
 		BBFEF528282D0BDF00F22E9E /* StaticFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF527282D0BDF00F22E9E /* StaticFloatNode.swift */; };
-		BBFEF52A282D0BEA00F22E9E /* StaticFloatNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF529282D0BEA00F22E9E /* StaticFloatNodeModel.swift */; };
-		BBFEF52D282D0C4F00F22E9E /* FloatOutputPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF52C282D0C4F00F22E9E /* FloatOutputPin.swift */; };
-		BBFEF52F282D0C5800F22E9E /* FloatOutputPinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF52E282D0C5800F22E9E /* FloatOutputPinModel.swift */; };
-		BBFEF532282D0CF700F22E9E /* FloatInputPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF531282D0CF700F22E9E /* FloatInputPin.swift */; };
-		BBFEF534282D0D0100F22E9E /* FloatInputPinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF533282D0D0100F22E9E /* FloatInputPinModel.swift */; };
 		BBFEF536282D297A00F22E9E /* NodeScene+StaticFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF535282D297A00F22E9E /* NodeScene+StaticFloatNode.swift */; };
-		BBFEF539282D2CFE00F22E9E /* ShowFloatNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF538282D2CFE00F22E9E /* ShowFloatNodeModel.swift */; };
 		BBFEF53B282D2D3800F22E9E /* ShowFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF53A282D2D3800F22E9E /* ShowFloatNode.swift */; };
 		BBFEF53D282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF53C282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB48C92828333DF2009A9FBF /* ShowTextureNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTextureNodeModel.swift; sourceTree = "<group>"; };
-		BB48C92B28333EFF009A9FBF /* StringInputPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInputPin.swift; sourceTree = "<group>"; };
-		BB48C92D28333F2C009A9FBF /* StringInputPinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInputPinModel.swift; sourceTree = "<group>"; };
-		BB48C93028333F8A009A9FBF /* StringOutputPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringOutputPin.swift; sourceTree = "<group>"; };
-		BB48C93228333FAB009A9FBF /* StringOutputPinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringOutputPinModel.swift; sourceTree = "<group>"; };
 		BB48C934283345EB009A9FBF /* NodeScene+StaticPlainTextureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+StaticPlainTextureNode.swift"; sourceTree = "<group>"; };
 		BBD2AF76283213A400965DF7 /* ShaderCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCore.swift; sourceTree = "<group>"; };
 		BBD2AF792832144000965DF7 /* ShowTextureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTextureNode.swift; sourceTree = "<group>"; };
@@ -56,10 +46,18 @@
 		BBD2AF822832165900965DF7 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 		BBD2AF842832170000965DF7 /* NodeScene+AddShowTextureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+AddShowTextureNode.swift"; sourceTree = "<group>"; };
 		BBD2AF8728321B7B00965DF7 /* StaticPlainTextureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticPlainTextureNode.swift; sourceTree = "<group>"; };
-		BBD2AF8928321BB100965DF7 /* StaticPlainTextureNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticPlainTextureNodeModel.swift; sourceTree = "<group>"; };
 		BBDFAD94282D7F4E00DE915F /* PlusFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusFloatNode.swift; sourceTree = "<group>"; };
-		BBDFAD96282D7F8300DE915F /* PlusFloatNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusFloatNodeModel.swift; sourceTree = "<group>"; };
 		BBDFAD98282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+PlusFloatNode.swift"; sourceTree = "<group>"; };
+		BBF424CA2834B08100B3047F /* OutputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputModel.swift; sourceTree = "<group>"; };
+		BBF424CC2834B0CC00B3047F /* OutputPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputPin.swift; sourceTree = "<group>"; };
+		BBF424CE2834B11600B3047F /* InputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModel.swift; sourceTree = "<group>"; };
+		BBF424D02834B13600B3047F /* InputPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPin.swift; sourceTree = "<group>"; };
+		BBF424D42834B1AF00B3047F /* NodeScene+draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+draw.swift"; sourceTree = "<group>"; };
+		BBF424D62834B20300B3047F /* NodeScene+mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+mouse.swift"; sourceTree = "<group>"; };
+		BBF424D82834B5F400B3047F /* OutputModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputModelBase.swift; sourceTree = "<group>"; };
+		BBF424DA2834B62100B3047F /* InputModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModelBase.swift; sourceTree = "<group>"; };
+		BBF424DC2834B87C00B3047F /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		BBF424DE2834B93A00B3047F /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
 		BBFEF508282D0A2800F22E9E /* MVCNodeEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCNodeEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFEF50B282D0A2800F22E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBFEF50D282D0A2800F22E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,17 +65,9 @@
 		BBFEF512282D0A2A00F22E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBFEF514282D0A2A00F22E9E /* MVCNodeEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MVCNodeEditor.entitlements; sourceTree = "<group>"; };
 		BBFEF51A282D0A4300F22E9E /* NodeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeScene.swift; sourceTree = "<group>"; };
-		BBFEF520282D0B7200F22E9E /* InputModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModelBase.swift; sourceTree = "<group>"; };
-		BBFEF522282D0B8800F22E9E /* OutputModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputModelBase.swift; sourceTree = "<group>"; };
 		BBFEF524282D0B9C00F22E9E /* NodeModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModelBase.swift; sourceTree = "<group>"; };
 		BBFEF527282D0BDF00F22E9E /* StaticFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFloatNode.swift; sourceTree = "<group>"; };
-		BBFEF529282D0BEA00F22E9E /* StaticFloatNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFloatNodeModel.swift; sourceTree = "<group>"; };
-		BBFEF52C282D0C4F00F22E9E /* FloatOutputPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatOutputPin.swift; sourceTree = "<group>"; };
-		BBFEF52E282D0C5800F22E9E /* FloatOutputPinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatOutputPinModel.swift; sourceTree = "<group>"; };
-		BBFEF531282D0CF700F22E9E /* FloatInputPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatInputPin.swift; sourceTree = "<group>"; };
-		BBFEF533282D0D0100F22E9E /* FloatInputPinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatInputPinModel.swift; sourceTree = "<group>"; };
 		BBFEF535282D297A00F22E9E /* NodeScene+StaticFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+StaticFloatNode.swift"; sourceTree = "<group>"; };
-		BBFEF538282D2CFE00F22E9E /* ShowFloatNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFloatNodeModel.swift; sourceTree = "<group>"; };
 		BBFEF53A282D2D3800F22E9E /* ShowFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFloatNode.swift; sourceTree = "<group>"; };
 		BBFEF53C282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+ShowFloatNode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,24 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BB48C92A28333ED3009A9FBF /* StringInputPin */ = {
-			isa = PBXGroup;
-			children = (
-				BB48C92B28333EFF009A9FBF /* StringInputPin.swift */,
-				BB48C92D28333F2C009A9FBF /* StringInputPinModel.swift */,
-			);
-			path = StringInputPin;
-			sourceTree = "<group>";
-		};
-		BB48C92F28333F53009A9FBF /* StringOutputPin */ = {
-			isa = PBXGroup;
-			children = (
-				BB48C93028333F8A009A9FBF /* StringOutputPin.swift */,
-				BB48C93228333FAB009A9FBF /* StringOutputPinModel.swift */,
-			);
-			path = StringOutputPin;
-			sourceTree = "<group>";
-		};
 		BBD2AF752832138A00965DF7 /* ShaderCores */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +98,6 @@
 			children = (
 				BBD2AF792832144000965DF7 /* ShowTextureNode.swift */,
 				BBD2AF842832170000965DF7 /* NodeScene+AddShowTextureNode.swift */,
-				BB48C92828333DF2009A9FBF /* ShowTextureNodeModel.swift */,
 			);
 			path = ShowTextureNode;
 			sourceTree = "<group>";
@@ -143,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				BBD2AF8728321B7B00965DF7 /* StaticPlainTextureNode.swift */,
-				BBD2AF8928321BB100965DF7 /* StaticPlainTextureNodeModel.swift */,
 				BB48C934283345EB009A9FBF /* NodeScene+StaticPlainTextureNode.swift */,
 			);
 			path = StaticPlainTextureNode;
@@ -153,10 +123,19 @@
 			isa = PBXGroup;
 			children = (
 				BBDFAD94282D7F4E00DE915F /* PlusFloatNode.swift */,
-				BBDFAD96282D7F8300DE915F /* PlusFloatNodeModel.swift */,
 				BBDFAD98282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift */,
 			);
 			path = PlusFloatNode;
+			sourceTree = "<group>";
+		};
+		BBF424D32834B19000B3047F /* NodeScene */ = {
+			isa = PBXGroup;
+			children = (
+				BBFEF51A282D0A4300F22E9E /* NodeScene.swift */,
+				BBF424D42834B1AF00B3047F /* NodeScene+draw.swift */,
+				BBF424D62834B20300B3047F /* NodeScene+mouse.swift */,
+			);
+			path = NodeScene;
 			sourceTree = "<group>";
 		};
 		BBFEF4FF282D0A2800F22E9E = {
@@ -180,7 +159,7 @@
 			children = (
 				BBFEF50B282D0A2800F22E9E /* AppDelegate.swift */,
 				BBFEF50D282D0A2800F22E9E /* ViewController.swift */,
-				BBFEF51A282D0A4300F22E9E /* NodeScene.swift */,
+				BBF424D32834B19000B3047F /* NodeScene */,
 				BBFEF51F282D0B5900F22E9E /* InputPins */,
 				BBFEF51D282D0B4C00F22E9E /* OutputPins */,
 				BBFEF51C282D0B4500F22E9E /* Nodes */,
@@ -201,6 +180,8 @@
 				BBDFAD93282D7F3800DE915F /* PlusFloatNode */,
 				BBFEF526282D0BD200F22E9E /* StaticFloatNode */,
 				BBFEF524282D0B9C00F22E9E /* NodeModelBase.swift */,
+				BBF424DE2834B93A00B3047F /* NodeModel.swift */,
+				BBF424DC2834B87C00B3047F /* Node.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -208,9 +189,9 @@
 		BBFEF51D282D0B4C00F22E9E /* OutputPins */ = {
 			isa = PBXGroup;
 			children = (
-				BB48C92F28333F53009A9FBF /* StringOutputPin */,
-				BBFEF52B282D0C4100F22E9E /* FloatOutputPin */,
-				BBFEF522282D0B8800F22E9E /* OutputModelBase.swift */,
+				BBF424CA2834B08100B3047F /* OutputModel.swift */,
+				BBF424CC2834B0CC00B3047F /* OutputPin.swift */,
+				BBF424D82834B5F400B3047F /* OutputModelBase.swift */,
 			);
 			path = OutputPins;
 			sourceTree = "<group>";
@@ -218,9 +199,9 @@
 		BBFEF51F282D0B5900F22E9E /* InputPins */ = {
 			isa = PBXGroup;
 			children = (
-				BB48C92A28333ED3009A9FBF /* StringInputPin */,
-				BBFEF530282D0CED00F22E9E /* FloatInputPin */,
-				BBFEF520282D0B7200F22E9E /* InputModelBase.swift */,
+				BBF424CE2834B11600B3047F /* InputModel.swift */,
+				BBF424D02834B13600B3047F /* InputPin.swift */,
+				BBF424DA2834B62100B3047F /* InputModelBase.swift */,
 			);
 			path = InputPins;
 			sourceTree = "<group>";
@@ -229,34 +210,14 @@
 			isa = PBXGroup;
 			children = (
 				BBFEF527282D0BDF00F22E9E /* StaticFloatNode.swift */,
-				BBFEF529282D0BEA00F22E9E /* StaticFloatNodeModel.swift */,
 				BBFEF535282D297A00F22E9E /* NodeScene+StaticFloatNode.swift */,
 			);
 			path = StaticFloatNode;
 			sourceTree = "<group>";
 		};
-		BBFEF52B282D0C4100F22E9E /* FloatOutputPin */ = {
-			isa = PBXGroup;
-			children = (
-				BBFEF52C282D0C4F00F22E9E /* FloatOutputPin.swift */,
-				BBFEF52E282D0C5800F22E9E /* FloatOutputPinModel.swift */,
-			);
-			path = FloatOutputPin;
-			sourceTree = "<group>";
-		};
-		BBFEF530282D0CED00F22E9E /* FloatInputPin */ = {
-			isa = PBXGroup;
-			children = (
-				BBFEF531282D0CF700F22E9E /* FloatInputPin.swift */,
-				BBFEF533282D0D0100F22E9E /* FloatInputPinModel.swift */,
-			);
-			path = FloatInputPin;
-			sourceTree = "<group>";
-		};
 		BBFEF537282D2CEB00F22E9E /* ShowFloatNode */ = {
 			isa = PBXGroup;
 			children = (
-				BBFEF538282D2CFE00F22E9E /* ShowFloatNodeModel.swift */,
 				BBFEF53A282D2D3800F22E9E /* ShowFloatNode.swift */,
 				BBFEF53C282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift */,
 			);
@@ -333,38 +294,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF424CB2834B08100B3047F /* OutputModel.swift in Sources */,
+				BBF424DF2834B93A00B3047F /* NodeModel.swift in Sources */,
+				BBF424D92834B5F400B3047F /* OutputModelBase.swift in Sources */,
 				BBFEF51B282D0A4300F22E9E /* NodeScene.swift in Sources */,
 				BBD2AF852832170000965DF7 /* NodeScene+AddShowTextureNode.swift in Sources */,
 				BBFEF536282D297A00F22E9E /* NodeScene+StaticFloatNode.swift in Sources */,
-				BBDFAD97282D7F8300DE915F /* PlusFloatNodeModel.swift in Sources */,
+				BBF424CD2834B0CC00B3047F /* OutputPin.swift in Sources */,
+				BBF424CF2834B11600B3047F /* InputModel.swift in Sources */,
+				BBF424D12834B13600B3047F /* InputPin.swift in Sources */,
+				BBF424D72834B20300B3047F /* NodeScene+mouse.swift in Sources */,
 				BBD2AF77283213A400965DF7 /* ShaderCore.swift in Sources */,
-				BBFEF52F282D0C5800F22E9E /* FloatOutputPinModel.swift in Sources */,
 				BBD2AF80283215F300965DF7 /* Renderer.swift in Sources */,
-				BBFEF523282D0B8800F22E9E /* OutputModelBase.swift in Sources */,
 				BBFEF53D282D2D9500F22E9E /* NodeScene+ShowFloatNode.swift in Sources */,
-				BBFEF532282D0CF700F22E9E /* FloatInputPin.swift in Sources */,
 				BBD2AF8828321B7B00965DF7 /* StaticPlainTextureNode.swift in Sources */,
-				BB48C92E28333F2C009A9FBF /* StringInputPinModel.swift in Sources */,
-				BBFEF52A282D0BEA00F22E9E /* StaticFloatNodeModel.swift in Sources */,
-				BB48C93128333F8A009A9FBF /* StringOutputPin.swift in Sources */,
-				BBFEF534282D0D0100F22E9E /* FloatInputPinModel.swift in Sources */,
 				BBD2AF7A2832144000965DF7 /* ShowTextureNode.swift in Sources */,
 				BBD2AF832832165900965DF7 /* Shader.metal in Sources */,
-				BBFEF52D282D0C4F00F22E9E /* FloatOutputPin.swift in Sources */,
 				BBFEF528282D0BDF00F22E9E /* StaticFloatNode.swift in Sources */,
 				BB48C935283345EB009A9FBF /* NodeScene+StaticPlainTextureNode.swift in Sources */,
-				BB48C93328333FAB009A9FBF /* StringOutputPinModel.swift in Sources */,
-				BBFEF539282D2CFE00F22E9E /* ShowFloatNodeModel.swift in Sources */,
-				BBD2AF8A28321BB100965DF7 /* StaticPlainTextureNodeModel.swift in Sources */,
+				BBF424DB2834B62100B3047F /* InputModelBase.swift in Sources */,
 				BBDFAD95282D7F4E00DE915F /* PlusFloatNode.swift in Sources */,
 				BBDFAD99282D7FCD00DE915F /* NodeScene+PlusFloatNode.swift in Sources */,
+				BBF424DD2834B87C00B3047F /* Node.swift in Sources */,
 				BBFEF525282D0B9C00F22E9E /* NodeModelBase.swift in Sources */,
 				BBFEF50E282D0A2800F22E9E /* ViewController.swift in Sources */,
 				BBFEF50C282D0A2800F22E9E /* AppDelegate.swift in Sources */,
 				BBFEF53B282D2D3800F22E9E /* ShowFloatNode.swift in Sources */,
-				BB48C92C28333EFF009A9FBF /* StringInputPin.swift in Sources */,
-				BB48C92928333DF2009A9FBF /* ShowTextureNodeModel.swift in Sources */,
-				BBFEF521282D0B7200F22E9E /* InputModelBase.swift in Sources */,
+				BBF424D52834B1AF00B3047F /* NodeScene+draw.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
