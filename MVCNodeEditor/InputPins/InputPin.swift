@@ -1,15 +1,15 @@
 //
-//  StringOutputPin.swift
+//  InputPin.swift
 //  MVCNodeEditor
 //
-//  Created by クワシマ・ユウキ on 2022/05/17.
+//  Created by クワシマ・ユウキ on 2022/05/18.
 //
 
 import Foundation
 import Cocoa
 import Combine
 
-class StringOutputPin: NSView {
+class InputPin: NSView {
     var subscriptions = Set<AnyCancellable>()
     
     @Published var isHovering = false
@@ -41,7 +41,7 @@ class StringOutputPin: NSView {
             self.removeTrackingArea(trackingArea)
         }
         
-        let options: NSTrackingArea.Options = [.mouseEnteredAndExited, .activeAlways, .enabledDuringMouseDrag, .mouseMoved]
+        let options: NSTrackingArea.Options = [.mouseEnteredAndExited, .activeAlways, .mouseMoved, .enabledDuringMouseDrag]
         let trackingArea = NSTrackingArea(rect: self.bounds, options: options, owner: self, userInfo: nil)
         self.addTrackingArea(trackingArea)
     }
