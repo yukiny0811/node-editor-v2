@@ -73,21 +73,8 @@ extension NodeScene {
             }
         }.store(in: &outputModel.subscriptions)
         
-        inputView.$isHovering.sink { value in
-            if value == true {
-                self.hoveringPinId = inputModel.uuid
-            } else {
-                self.hoveringPinId = nil
-            }
-        }.store(in: &inputView.subscriptions)
-        
-        outputView.$isHovering.sink { value in
-            if value == true {
-                self.hoveringPinId = outputModel.uuid
-            } else {
-                self.hoveringPinId = nil
-            }
-        }.store(in: &outputView.subscriptions)
+        setHoverBinding(model: inputModel)
+        setHoverBinding(model: outputModel)
         
         
     }

@@ -28,6 +28,8 @@ class NodeScene: NSView {
     
     var mousePoint: NSPoint? = nil
     
+    var selectedNodeId: String? = nil
+    
     override init(frame: NSRect) {
         super.init(frame: frame)
     }

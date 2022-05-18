@@ -14,8 +14,9 @@ extension NodeScene {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
+        let path = NSBezierPath()
         for connection in connections {
-            let path = NSBezierPath()
+            
             NSColor.red.setStroke()
             let outPoint = outputPinViews[connection.output]?.superview?.convert((outputPinViews[connection.output]?.frame.origin)!, to: self)
             let inPoint = inputPinViews[connection.input]?.superview?.convert((inputPinViews[connection.input]?.frame.origin)!, to: self)
@@ -24,10 +25,11 @@ extension NodeScene {
             path.lineWidth = 5.0
             path.stroke()
             path.fill()
-            path.close()
+            
         }
+        path.close()
         
-        let path = NSBezierPath()
+        let path2 = NSBezierPath()
         if selectedPinId == nil {
             return
         }
@@ -41,11 +43,12 @@ extension NodeScene {
         }
         NSColor.red.setStroke()
         let outPoint = outputPinViews[selectedPinId!]?.superview?.convert((outputPinViews[selectedPinId!]?.frame.origin)!, to: self)
-        path.move(to: outPoint!)
-        path.line(to: mousePoint!)
-        path.lineWidth = 5.0
-        path.stroke()
-        path.fill()
-        path.close()
+        path2.move(to: outPoint!)
+        path2.line(to: mousePoint!)
+        path2.lineWidth = 5.0
+        path2.stroke()
+        path2.fill()
+        path2.close()
+        self.needsDisplay = true
     }
 }

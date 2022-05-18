@@ -23,6 +23,10 @@ class ViewController: NSViewController {
 //        nodeScene.addPlusFloatNode(frame: NSRect(x: 100, y: 100, width: 100, height: 100))
 //        nodeScene.addShowFloatNode(frame: NSRect(x: 200, y: 200, width: 100, height: 100))
         nodeScene.addStaticPlainTextureNode(frame: NSRect(x: 0, y: 0, width: 100, height: 100))
+        nodeScene.addStaticFloatNode(frame: NSRect(x: 0, y: 250, width: 100, height: 100))
+        nodeScene.addStaticFloatNode(frame: NSRect(x: 0, y: 360, width: 100, height: 100))
+        nodeScene.addStaticFloatNode(frame: NSRect(x: 0, y: 470, width: 100, height: 100))
+        nodeScene.addTextureColorNode(frame: NSRect(x: 120, y: 120, width: 100, height: 200))
         nodeScene.addShowTextureNode(frame: NSRect(x: 300, y: 300, width: 512, height: 512))
 
         // Do any additional setup after loading the view.

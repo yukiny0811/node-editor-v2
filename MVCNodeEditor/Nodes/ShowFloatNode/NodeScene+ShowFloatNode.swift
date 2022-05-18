@@ -40,13 +40,7 @@ extension NodeScene {
             nodeView.textField.stringValue = String(value)
         }.store(in: &nodeModel.subscriptions)
         
-        inputView.$isHovering.sink { value in
-            if value == true {
-                self.hoveringPinId = inputModel.uuid
-            } else {
-                self.hoveringPinId = nil
-            }
-        }.store(in: &inputView.subscriptions)
+        setHoverBinding(model: inputModel)
         
         
     }

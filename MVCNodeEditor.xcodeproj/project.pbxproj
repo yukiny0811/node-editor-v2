@@ -26,6 +26,9 @@
 		BBF424DB2834B62100B3047F /* InputModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424DA2834B62100B3047F /* InputModelBase.swift */; };
 		BBF424DD2834B87C00B3047F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424DC2834B87C00B3047F /* Node.swift */; };
 		BBF424DF2834B93A00B3047F /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424DE2834B93A00B3047F /* NodeModel.swift */; };
+		BBF424E22834BB1B00B3047F /* AddTextureColorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424E12834BB1B00B3047F /* AddTextureColorNode.swift */; };
+		BBF424E42834BB4300B3047F /* NodeScene+AddTextureColorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424E32834BB4300B3047F /* NodeScene+AddTextureColorNode.swift */; };
+		BBF424E62834E2B500B3047F /* NodeScene+functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF424E52834E2B500B3047F /* NodeScene+functions.swift */; };
 		BBFEF50C282D0A2800F22E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF50B282D0A2800F22E9E /* AppDelegate.swift */; };
 		BBFEF50E282D0A2800F22E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEF50D282D0A2800F22E9E /* ViewController.swift */; };
 		BBFEF510282D0A2A00F22E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFEF50F282D0A2A00F22E9E /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		BBF424DA2834B62100B3047F /* InputModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModelBase.swift; sourceTree = "<group>"; };
 		BBF424DC2834B87C00B3047F /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		BBF424DE2834B93A00B3047F /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
+		BBF424E12834BB1B00B3047F /* AddTextureColorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextureColorNode.swift; sourceTree = "<group>"; };
+		BBF424E32834BB4300B3047F /* NodeScene+AddTextureColorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+AddTextureColorNode.swift"; sourceTree = "<group>"; };
+		BBF424E52834E2B500B3047F /* NodeScene+functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NodeScene+functions.swift"; sourceTree = "<group>"; };
 		BBFEF508282D0A2800F22E9E /* MVCNodeEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCNodeEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFEF50B282D0A2800F22E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBFEF50D282D0A2800F22E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,8 +140,18 @@
 				BBFEF51A282D0A4300F22E9E /* NodeScene.swift */,
 				BBF424D42834B1AF00B3047F /* NodeScene+draw.swift */,
 				BBF424D62834B20300B3047F /* NodeScene+mouse.swift */,
+				BBF424E52834E2B500B3047F /* NodeScene+functions.swift */,
 			);
 			path = NodeScene;
+			sourceTree = "<group>";
+		};
+		BBF424E02834BB0100B3047F /* AddTextureColorNode */ = {
+			isa = PBXGroup;
+			children = (
+				BBF424E12834BB1B00B3047F /* AddTextureColorNode.swift */,
+				BBF424E32834BB4300B3047F /* NodeScene+AddTextureColorNode.swift */,
+			);
+			path = AddTextureColorNode;
 			sourceTree = "<group>";
 		};
 		BBFEF4FF282D0A2800F22E9E = {
@@ -174,6 +190,7 @@
 		BBFEF51C282D0B4500F22E9E /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				BBF424E02834BB0100B3047F /* AddTextureColorNode */,
 				BBD2AF8628321B6400965DF7 /* StaticPlainTextureNode */,
 				BBD2AF782832142B00965DF7 /* ShowTextureNode */,
 				BBFEF537282D2CEB00F22E9E /* ShowFloatNode */,
@@ -294,9 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF424E62834E2B500B3047F /* NodeScene+functions.swift in Sources */,
 				BBF424CB2834B08100B3047F /* OutputModel.swift in Sources */,
 				BBF424DF2834B93A00B3047F /* NodeModel.swift in Sources */,
 				BBF424D92834B5F400B3047F /* OutputModelBase.swift in Sources */,
+				BBF424E22834BB1B00B3047F /* AddTextureColorNode.swift in Sources */,
 				BBFEF51B282D0A4300F22E9E /* NodeScene.swift in Sources */,
 				BBD2AF852832170000965DF7 /* NodeScene+AddShowTextureNode.swift in Sources */,
 				BBFEF536282D297A00F22E9E /* NodeScene+StaticFloatNode.swift in Sources */,
@@ -321,6 +340,7 @@
 				BBFEF50C282D0A2800F22E9E /* AppDelegate.swift in Sources */,
 				BBFEF53B282D2D3800F22E9E /* ShowFloatNode.swift in Sources */,
 				BBF424D52834B1AF00B3047F /* NodeScene+draw.swift in Sources */,
+				BBF424E42834BB4300B3047F /* NodeScene+AddTextureColorNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

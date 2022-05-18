@@ -22,7 +22,9 @@ extension NodeScene {
         super.mouseDown(with: event)
         self.needsDisplay = true
         mousePoint = event.locationInWindow
-        self.selectedPinId = self.hoveringPinId
+        if self.hoveringPinId != nil {
+            self.selectedPinId = self.hoveringPinId
+        }
     }
     
     override func mouseUp(with event: NSEvent) {
@@ -31,6 +33,8 @@ extension NodeScene {
         if self.selectedPinId != nil {
             if self.hoveringPinId != nil {
                 self.targetPinId = self.hoveringPinId
+                print("selected: ", self.selectedPinId)
+                print("target: ", self.targetPinId)
                 guard outputPinModels[self.selectedPinId!] != nil else {
                     return
                 }
