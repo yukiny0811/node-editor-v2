@@ -36,24 +36,14 @@ extension NodeScene {
         }.store(in: &outputModel.subscriptions)
 
         outputModel.$inputId.sink { [self] value in
-            nodeModel.value = "float4 color = float4(0.0, 1.0, 0.0, 1.0);"
+            nodeModel.value = "float4 color = float4(0.0, 0.0, 0.0, 1.0);"
             if value != nil {
                 (inputPinModels[value!] as? InputModel<String>)?.value = outputModel.value
             }
 
         }.store(in: &outputModel.subscriptions)
         
-        
-        outputView.$isHovering.sink { value in
-            print("outputView hovering")
-            if value == true {
-                print("outputView hovering true")
-                self.hoveringPinId = outputModel.uuid
-            } else {
-                print("outputView hovering false")
-                self.hoveringPinId = nil
-            }
-        }.store(in: &outputView.subscriptions)
+        setHoverBinding(model: outputModel)
         
     }
 }
